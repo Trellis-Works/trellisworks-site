@@ -1,0 +1,43 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <main>
+    <p class="eyebrow">Trellis Works</p>
+    <h1>Practical systems for growing work.</h1>
+    <p class="copy">We’re building something useful. Check back soon.</p>
+  </main>
+</Layout>
+
+<style>
+  :global(*) { box-sizing: border-box; }
+  :global(body) {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background: #f6f4ee;
+    color: #19332b;
+    font-family: ui-sans-serif, system-ui, sans-serif;
+  }
+  main { max-width: 42rem; }
+  .eyebrow {
+    margin: 0 0 1.5rem;
+    color: #567268;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  h1 {
+    margin: 0;
+    font-family: ui-serif, Georgia, serif;
+    font-size: clamp(2.75rem, 8vw, 5.5rem);
+    font-weight: 500;
+    letter-spacing: -0.055em;
+    line-height: 0.96;
+  }
+  .copy { margin: 1.75rem 0 0; color: #40584f; font-size: 1.1rem; }
+</style>
