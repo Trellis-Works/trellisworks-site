@@ -5,8 +5,19 @@ import Layout from "../layouts/Layout.astro";
 <Layout>
   <main>
     <p class="eyebrow">Trellis Works</p>
-    <h1>Practical systems for growing work.</h1>
-    <p class="copy">We’re building something useful. Check back soon.</p>
+    <h1>Practical systems for better work.</h1>
+    <p class="copy">
+      Trellis Works helps organizations improve how work gets done. We combine consulting,
+      thoughtful workflow design, and useful technology to build solutions that fit the real
+      needs of your business.
+    </p>
+    <p class="copy">
+      We’re building a library of reusable tools and methods through client work—without
+      forcing organizations into a one-size-fits-all product.
+    </p>
+    <p class="contact">
+      <a href="mailto:info@trellisworks.ca">Get in touch: info@trellisworks.ca</a>
+    </p>
   </main>
 </Layout>
 
@@ -39,5 +50,13 @@ import Layout from "../layouts/Layout.astro";
     letter-spacing: -0.055em;
     line-height: 0.96;
   }
-  .copy { margin: 1.75rem 0 0; color: #40584f; font-size: 1.1rem; }
+  .copy {
+    max-width: 39rem;
+    margin: 1.5rem 0 0;
+    color: #40584f;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  .contact { margin: 2.25rem 0 0; font-weight: 700; }
+  a { color: #19332b; text-underline-offset: 0.2em; }
 </style>

@@ -1,5 +1,8 @@
 ---
-const { title = "Trellis Works" } = Astro.props;
+const {
+  title = "Trellis Works | Practical systems for better work",
+  description = "Trellis Works helps organizations improve operations, build practical systems, and put useful technology to work."
+} = Astro.props;
 ---
 
 <!doctype html>
@@ -7,8 +10,13 @@ const { title = "Trellis Works" } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="robots" content="noindex, nofollow" />
-    <meta name="description" content="Trellis Works is preparing something useful." />
+    <meta name="description" content={description} />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://trellisworks.ca/" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content="https://trellisworks.ca/" />
+    <meta property="og:type" content="website" />
     <title>{title}</title>
   </head>
   <body>
