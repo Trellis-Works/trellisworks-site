@@ -10,4 +10,8 @@ A minimal Astro static site for Cloudflare Pages.
 
 Cloudflare Pages should use `npm run build` and publish `dist`.
 
-The temporary placeholder deliberately uses `noindex, nofollow`. Remove that only when the public site is ready to be discoverable.
+## Brand assets
+
+The supplied Trellis Works logo assets are stored in `public/brand/`. The public page uses the
+transparent wordmark and trellis mark; the white-background wordmark is retained for use on light
+surfaces. The source brand guide is intentionally kept outside this public repository.
