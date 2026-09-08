@@ -1,7 +1,31 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-const contactHref = "https://mail.google.com/mail/?view=cm&fs=1&to=info%40trellisworks.ca&su=Let%27s%20talk%20about%20working%20together&body=Hi%20Trellis%20Works%2C%0D%0A%0D%0AI%27d%20like%20to%20explore%20how%20you%20could%20help%20our%20team.%0D%0A%0D%0AA%20little%20about%20our%20organization%3A%20%0D%0A%0D%0AWhat%20we%27d%20like%20to%20improve%3A%20%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20name%5D";
+const contactBody = `Hi Trellis Works,
+
+I'd like to explore how you could help our team.
+
+About our organization:
+• Organization and industry:
+• Team or department:
+
+What we'd like to improve:
+• Process, system, or workload:
+• What's getting in the way:
+• What success would look like:
+
+Thanks,
+[Your name]`;
+
+const contactParams = new URLSearchParams({
+  view: "cm",
+  fs: "1",
+  to: "info@trellisworks.ca",
+  su: "Let's talk about working together",
+  body: contactBody,
+});
+
+const contactHref = `https://mail.google.com/mail/?${contactParams.toString()}`;
 ---
 
 <Layout
