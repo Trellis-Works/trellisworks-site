@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 
-const contactHref = "mailto:info@trellisworks.ca?subject=Let%27s%20talk%20about%20working%20together&body=Hi%20Trellis%20Works%2C%0D%0A%0D%0AI%27d%20like%20to%20explore%20how%20you%20could%20help%20our%20team.%0D%0A%0D%0AA%20little%20about%20our%20organization%3A%20%0D%0A%0D%0AWhat%20we%27d%20like%20to%20improve%3A%20%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20name%5D";
+const contactHref = "https://mail.google.com/mail/?view=cm&fs=1&to=info%40trellisworks.ca&su=Let%27s%20talk%20about%20working%20together&body=Hi%20Trellis%20Works%2C%0D%0A%0D%0AI%27d%20like%20to%20explore%20how%20you%20could%20help%20our%20team.%0D%0A%0D%0AA%20little%20about%20our%20organization%3A%20%0D%0A%0D%0AWhat%20we%27d%20like%20to%20improve%3A%20%0D%0A%0D%0AThanks%2C%0D%0A%5BYour%20name%5D";
 ---
 
 <Layout
@@ -39,7 +39,7 @@ const contactHref = "mailto:info@trellisworks.ca?subject=Let%27s%20talk%20about%
           <a class="nav-link" href="#about">About</a>
           <a class="nav-link" href="#contact">Contact</a>
         </nav>
-        <a class="button button-primary nav-cta" href={contactHref}>Let&apos;s Talk</a>
+        <a class="button button-primary nav-cta" href={contactHref} target="_blank" rel="noopener noreferrer">Let&apos;s Talk</a>
       </div>
     </div>
   </header>
@@ -52,7 +52,7 @@ const contactHref = "mailto:info@trellisworks.ca?subject=Let%27s%20talk%20about%
           <h1><span class="hero-title-line">We build the <span class="accent">structure</span> that</span><span class="hero-title-line">unlocks potential.</span></h1>
           <p class="hero-copy">Trellis Works starts with how your business actually works. We find where time, effort and resources are being lost, then design practical systems that give your team more capacity to focus on what matters.</p>
           <div class="hero-actions">
-            <a class="button button-brass" href={contactHref}>Let&apos;s Talk</a>
+            <a class="button button-brass" href={contactHref} target="_blank" rel="noopener noreferrer">Let&apos;s Talk</a>
             <a class="button button-ghost" href="#services">Explore Services</a>
           </div>
         </div>
@@ -216,7 +216,7 @@ const contactHref = "mailto:info@trellisworks.ca?subject=Let%27s%20talk%20about%
           <p class="section-intro" style="color: rgba(246, 244, 238, 0.86);">If you’re looking at a process, system or workload and thinking there has to be a better way to do this, that’s usually a good place to start.</p>
           <p class="section-intro" style="color: rgba(246, 244, 238, 0.86);">Tell us what’s getting in the way, and we’ll help you figure out what should change.</p>
           <div class="hero-actions" style="margin-top: 30px;">
-            <a class="button button-brass" href={contactHref}>Start a conversation</a>
+            <a class="button button-brass" href={contactHref} target="_blank" rel="noopener noreferrer">Start a conversation</a>
           </div>
         </div>
         <div class="contact-card">
@@ -224,7 +224,7 @@ const contactHref = "mailto:info@trellisworks.ca?subject=Let%27s%20talk%20about%
           <ul class="contact-list" style="margin-top: 18px;">
             <li>
               <span class="contact-label">Email</span>
-              <span class="contact-value"><a href={contactHref}>info@trellisworks.ca</a></span>
+              <span class="contact-value"><a href={contactHref} target="_blank" rel="noopener noreferrer">info@trellisworks.ca</a></span>
             </li>
             <li>
               <span class="contact-label">Location</span>
@@ -248,7 +248,7 @@ const contactHref = "mailto:info@trellisworks.ca?subject=Let%27s%20talk%20about%
         <a href="#approach">Approach</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href={contactHref}>info@trellisworks.ca</a>
+        <a href={contactHref} target="_blank" rel="noopener noreferrer">info@trellisworks.ca</a>
       </div>
     </div>
   </footer>
