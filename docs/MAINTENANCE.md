@@ -74,18 +74,25 @@ The public page identifies it as **Trellis: Report Automation Scoping Call**, 15
 and shows appointment availability. Keep appointment duration consistent with website/ad copy.
 Change the booking URL once in `src/config/excel-reporting.ts`, build, test and deploy.
 
-Recommended Google form: first/last name and email (Google's defaults), company, and
-“What report are you preparing, and which steps do you do by hand?” Ask about source systems as
-an optional field if useful. Do not require a phone number or file upload. Josh authorized optional
-form editing, but the site's deploy does not itself change Google schedule settings. Actual form
-inspection/edit status is recorded in the canonical Notion website runbook after verification.
+Google form updated and publicly verified in Chrome on November 17, 2026 after Josh’s explicit
+request. First name, last name and email remain required. Both added fields are optional:
 
-Final browser check: the live campaign CTA opens the correct schedule, available 15-minute times
-lead to a booking form with first name, last name and email. No test appointment was submitted and
-no invitation sent. Google form settings were not edited; Josh can
-add the company and report questions later. Desktop and 390px mobile layouts showed no horizontal
-overflow; FAQs expanded and the landing-page console had no errors. Screenshots are in ignored
-`output/`. Production build, four campaign tests and the three-page generated-link crawl passed.
+- Company
+- What’s the one report that eats the most time right now?
+
+Saved meeting description:
+
+> A 15-minute conversation about one report your team prepares regularly. We’ll discuss where the
+> data comes from, the steps you do by hand and whether we can help automate the process. No
+> spreadsheet upload or preparation needed.
+
+The same booking URL is retained. Duration, availability, timezone, conflict calendars, payment and
+reminder settings were not changed. Public verification opened an available slot, confirmed both
+added fields display Optional, and cancelled without submitting an appointment. Screenshot:
+`output/google-booking-intake.jpg`. These Google-side changes required no website deployment.
+Desktop and 390px mobile website layouts, FAQ behavior and the no-error landing console were
+verified during the original site build; the production build, four campaign tests and the three-page
+link crawl passed then.
 
 The secondary email actions open an unsent Gmail draft or the visitor's email client to
 `info@trellisworks.ca`, including concise workflow prompts. No email is sent by the website.

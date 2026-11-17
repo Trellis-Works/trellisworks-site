@@ -47,8 +47,9 @@ checks, staff review and team handoff. No assessment/sample lead magnet, promise
 fixed delivery time. Primary ad and tagged URL are in the separate handoff.
 
 Page, responsive layout, FAQs, metadata, email fallback and Google booking path were tested.
-No test appointment was submitted. Google form still has name/email; Josh may add company and a
-short question about the report. Additional analytics setup was explicitly deferred: event hooks
+No test appointment was submitted. Google form was subsequently updated in Chrome: Company and
+“What’s the one report that eats the most time right now?” are optional, and a 15-minute meeting
+description is saved and publicly verified. Same booking URL and availability; no website redeploy. Additional analytics setup was explicitly deferred: event hooks
 are browser-only, with no collected counts. Ad launch/spend has not been authorized in this chat.
 
 Use browser work last, after code/API/build work; Josh said it consumes too many tokens.

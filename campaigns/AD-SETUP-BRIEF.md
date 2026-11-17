@@ -12,7 +12,7 @@ Trellis implements one repeatable reporting workflow: agreed source exports → 
 
 **Booking:** https://calendar.app.google/uV1Mua1VdEaYQ73i7
 
-The page CTA opens Josh’s existing “Trellis: Report Automation Scoping Call”: 15 minutes, Google Meet. Name/email form and available times were checked without submitting an appointment. Company/report questions can be added later. The page is live and was tested on desktop/mobile.
+The page CTA opens Josh’s existing “Trellis: Report Automation Scoping Call”: 15 minutes, Google Meet. Name/email remain required. Company and “What’s the one report that eats the most time right now?” are optional. A clear 15-minute meeting description is saved. The public form and available times were checked without submitting an appointment. The page is live and was tested on desktop/mobile.
 
 ## Copy to use
 
