@@ -9,6 +9,11 @@ Keep this guide and the campaign handoff synchronized with material changes.
 
 ### Current production exception: source push pending
 
+**Josh's subsequent direction:** restore the established GitHub-triggered deployment workflow.
+Do not make another direct production upload when GitHub authentication fails. Resolve source
+authentication and synchronization first. The direct-deploy command below records what happened;
+it is not the procedure for the next session. See [CONTINUATION.md](CONTINUATION.md).
+
 The campaign is **live and verified** through direct Cloudflare Pages deployment
 `a15b116c-06fa-466c-80ca-3e540e1f62bc`, built from local commit
 `d2712acefec214db4e840a3c00719722cf43cb01`. Its production URL is
