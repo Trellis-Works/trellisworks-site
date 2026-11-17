@@ -76,8 +76,8 @@ form editing, but the site's deploy does not itself change Google schedule setti
 inspection/edit status is recorded in the canonical Notion website runbook after verification.
 
 Final browser check: the live campaign CTA opens the correct schedule, available 15-minute times
-lead to a booking form with first name, last name and email, and the form can be cancelled. No test
-appointment was submitted and no invitation sent. Google form settings were not edited; Josh can
+lead to a booking form with first name, last name and email. No test appointment was submitted and
+no invitation sent. Google form settings were not edited; Josh can
 add the company and report questions later. Desktop and 390px mobile layouts showed no horizontal
 overflow; FAQs expanded and the landing-page console had no errors. Screenshots are in ignored
 `output/`. Production build, four campaign tests and the three-page generated-link crawl passed.
