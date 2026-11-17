@@ -7,6 +7,32 @@ Source: `Trellis-Works/trellisworks-site`, branch `main`. Local checkout:
 Cloudflare Pages project: `trellisworks-site-git`. A push to `main` builds and deploys production.
 Keep this guide and the campaign handoff synchronized with material changes.
 
+### Current production exception: source push pending
+
+The campaign is **live and verified** through direct Cloudflare Pages deployment
+`a15b116c-06fa-466c-80ca-3e540e1f62bc`, built from local commit
+`d2712acefec214db4e840a3c00719722cf43cb01`. Its production URL is
+<https://a15b116c.trellisworks-site-git.pages.dev>; the custom domain serves the same campaign.
+Both saved GitHub tokens returned `401 Bad credentials`, and a normal push had no usable credential.
+`origin/main` therefore remains at the earlier baseline. **Do not redeploy that older remote branch**
+before synchronizing these local commits, or it will remove the campaign.
+
+Restore the repository's normal GitHub authentication through the supported login/credential flow,
+then run `git push origin main` from this checkout. No force-push is needed. The normal integration
+will rebuild the same application from the synchronized source; confirm the resulting commit/deploy.
+Do not paste fresh tokens into chat, source, Git remote URLs or command arguments.
+
+Direct deployment used the existing Cloudflare credential, passed only through the subprocess
+environment to the installed Wrangler CLI:
+
+```sh
+node /Users/josh/.npm/_npx/d77349f55c2be1c0/node_modules/wrangler/bin/wrangler.js pages deploy dist --project-name trellisworks-site-git --branch main --commit-hash <tested-commit>
+```
+
+The environment requires `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`; read them securely from
+the existing credential file. The npm cache path is machine-specific; use an installed official
+Wrangler CLI if it changes. This is a temporary deployment exception, not a switch to a new host.
+
 ## What changed on November 17, 2026
 
 Josh selected the Excel reporting implementation offer and explicitly authorized the landing-page
@@ -48,6 +74,13 @@ Recommended Google form: first/last name and email (Google's defaults), company,
 an optional field if useful. Do not require a phone number or file upload. Josh authorized optional
 form editing, but the site's deploy does not itself change Google schedule settings. Actual form
 inspection/edit status is recorded in the canonical Notion website runbook after verification.
+
+Final browser check: the live campaign CTA opens the correct schedule, available 15-minute times
+lead to a booking form with first name, last name and email, and the form can be cancelled. No test
+appointment was submitted and no invitation sent. Google form settings were not edited; Josh can
+add the company and report questions later. Desktop and 390px mobile layouts showed no horizontal
+overflow; FAQs expanded and the landing-page console had no errors. Screenshots are in ignored
+`output/`. Production build, four campaign tests and the three-page generated-link crawl passed.
 
 The secondary email actions open an unsent Gmail draft or the visitor's email client to
 `info@trellisworks.ca`, including concise workflow prompts. No email is sent by the website.
