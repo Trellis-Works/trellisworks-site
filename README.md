@@ -3,6 +3,8 @@
 A minimal Astro static site for Cloudflare Pages.
 
 **Maintainers:** start with [docs/MAINTENANCE.md](docs/MAINTENANCE.md).
+Next session: [GitHub deployment repair brief](docs/CONTINUATION.md).
+For the ad-account agent: [ad setup brief](campaigns/AD-SETUP-BRIEF.md).
 The [Excel reporting campaign](https://trellisworks.ca/excel-reporting/) is configured in
 `src/config/excel-reporting.ts`. Ready-to-use ad copy and launch instructions are in
 [campaigns/excel-reporting.md](campaigns/excel-reporting.md).
