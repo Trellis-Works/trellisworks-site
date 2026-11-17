@@ -78,7 +78,7 @@ Google form updated and publicly verified in Chrome on November 17, 2026 after J
 request. First name, last name and email remain required. Both added fields are optional:
 
 - Company
-- What’s the one report that eats the most time right now?
+- What would you like to discuss? Briefly describe your current reporting process, the tools or data involved, and what you’d like to improve.
 
 Saved meeting description:
 
@@ -86,8 +86,14 @@ Saved meeting description:
 > data comes from, the steps you do by hand and whether we can help automate the process. No
 > spreadsheet upload or preparation needed.
 
-The same booking URL is retained. Duration, availability, timezone, conflict calendars, payment and
-reminder settings were not changed. Public verification opened an available slot, confirmed both
+The same booking URL and 15-minute duration are retained. Final weekly windows in the schedule’s
+existing Edmonton timezone: Monday 11:30–13:30, Wednesday 14:00–16:00, Friday 08:00–10:00.
+Tuesday/Thursday/weekends are unavailable. Book up to seven days ahead with 12 hours’ rolling notice,
+a 15-minute buffer and the existing four-bookings-per-day cap. Twelve hours is not a strict
+previous-calendar-day cutoff: afternoon slots can still be booked overnight. Payment and reminders
+were not changed. Work-calendar conflict checking remains enabled. This plan gates extra conflict
+calendars behind an upgrade; none was purchased. Josh said he will handle synchronizing personal
+busy time to the work calendar. Public verification showed four half-hour-spaced starts per window. Public verification opened an available slot, confirmed both
 added fields display Optional, and cancelled without submitting an appointment. Screenshot:
 `output/google-booking-intake.jpg`. These Google-side changes required no website deployment.
 Desktop and 390px mobile website layouts, FAQ behavior and the no-error landing console were

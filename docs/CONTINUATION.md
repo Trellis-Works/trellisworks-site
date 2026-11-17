@@ -48,8 +48,11 @@ fixed delivery time. Primary ad and tagged URL are in the separate handoff.
 
 Page, responsive layout, FAQs, metadata, email fallback and Google booking path were tested.
 No test appointment was submitted. Google form was subsequently updated in Chrome: Company and
-“What’s the one report that eats the most time right now?” are optional, and a 15-minute meeting
-description is saved and publicly verified. Same booking URL and availability; no website redeploy. Additional analytics setup was explicitly deferred: event hooks
+“What would you like to discuss? Briefly describe your current reporting process, the tools or data involved, and what you’d like to improve.” are optional, and a 15-minute meeting
+description is saved and publicly verified. Same booking URL; no website redeploy. Final windows: Mon 11:30–13:30, Wed 14:00–16:00, Fri
+08:00–10:00 in the existing Edmonton timezone. Seven-day horizon, 12-hour rolling notice,
+15-minute buffer and four-per-day cap. Josh owns syncing personal busy time into the work calendar;
+additional Google conflict calendars require an upgrade that was not approved or purchased. Additional analytics setup was explicitly deferred: event hooks
 are browser-only, with no collected counts. Ad launch/spend has not been authorized in this chat.
 
 Use browser work last, after code/API/build work; Josh said it consumes too many tokens.

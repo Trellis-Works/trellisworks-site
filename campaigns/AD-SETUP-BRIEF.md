@@ -12,7 +12,7 @@ Trellis implements one repeatable reporting workflow: agreed source exports → 
 
 **Booking:** https://calendar.app.google/uV1Mua1VdEaYQ73i7
 
-The page CTA opens Josh’s existing “Trellis: Report Automation Scoping Call”: 15 minutes, Google Meet. Name/email remain required. Company and “What’s the one report that eats the most time right now?” are optional. A clear 15-minute meeting description is saved. The public form and available times were checked without submitting an appointment. The page is live and was tested on desktop/mobile.
+The page CTA opens Josh’s existing “Trellis: Report Automation Scoping Call”: 15 minutes, Google Meet. Name/email remain required. Company and “What would you like to discuss? Briefly describe your current reporting process, the tools or data involved, and what you’d like to improve.” are optional. A clear 15-minute meeting description is saved. The public form and available times were checked without submitting an appointment. The page is live and was tested on desktop/mobile.
 
 ## Copy to use
 
@@ -53,3 +53,8 @@ Return the campaign/account identifier, exact saved copy/URL, review status, bud
 
 Background: [Campaign decisions and handoff](https://app.notion.com/p/3fe07c44d1ea8153ae10de3d92885cb6). Website state: [Website operating notes](https://app.notion.com/p/3d507c44d1ea810cb4fced80b9675afc).
 
+
+
+## Final booking availability
+
+Monday 11:30 a.m.–1:30 p.m.; Wednesday 2–4 p.m.; Friday 8–10 a.m., in the schedule’s Edmonton timezone. Seven days ahead, 12 hours rolling notice, 15-minute buffer, maximum four bookings per day. Company and the discussion/process question are optional. Work-calendar conflicts are checked; Josh will handle personal/work busy-time synchronization. Do not change these settings during ad setup.
