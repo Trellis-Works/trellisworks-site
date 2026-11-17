@@ -1,7 +1,9 @@
 ---
 const {
   title = "Trellis Works | Practical systems for better work",
-  description = "Trellis Works helps organizations improve operations, build practical systems, and put useful technology to work."
+  description = "Trellis Works helps organizations improve operations, build practical systems, and put useful technology to work.",
+  canonical = new URL(Astro.url.pathname, "https://trellisworks.ca").href,
+  image,
 } = Astro.props;
 ---
 
@@ -12,11 +14,14 @@ const {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content={description} />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://trellisworks.ca/" />
+    <link rel="canonical" href={canonical} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:url" content="https://trellisworks.ca/" />
+    <meta property="og:url" content={canonical} />
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Trellis Works" />
+    {image && <meta property="og:image" content={new URL(image, "https://trellisworks.ca").href} />}
+    <meta name="twitter:card" content={image ? "summary_large_image" : "summary"} />
     <link rel="icon" type="image/svg+xml" href="/brand/trellisworks-mark.svg" />
     <title>{title}</title>
   </head>

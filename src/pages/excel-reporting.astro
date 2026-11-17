@@ -1,0 +1,121 @@
+---
+import Layout from "../layouts/Layout.astro";
+import { excelReporting as campaign, reportingEmail } from "../config/excel-reporting";
+import "../styles/excel-reporting.css";
+
+const faqs = [
+  ["Does the report have to be monthly?", "Weekly, monthly or quarterly is fine. The useful starting point is a report your team prepares repeatedly, with a process we can understand and test."],
+  ["Do we need to replace Excel or our accounting system?", "We start with the tools and files you already use. A supported Excel or CSV export may be enough. We recommend a new integration or tool only where the workflow needs it, and agree any software costs before work begins."],
+  ["Will everything run automatically?", "That depends on your sources and review requirements. A reliable process might start with dropping approved exports into a folder, then generating a report for review. We agree what runs automatically, what staff do and how exceptions are handled."],
+  ["What if the report has complicated rules?", "We map the calculations, exceptions and checks with the person who owns the report before committing to a build. If a separate discovery phase is needed to establish feasibility, we explain and scope that first."],
+  ["What does it cost?", "We quote against an agreed scope: the report, source files, reporting rules, checks and handoff. The introductory call helps establish fit and what we need to prepare that scope. There is no commitment to a project when you book."],
+  ["Do I need to upload a spreadsheet to book?", "No. Start with a description of the report and the steps that take the most effort. We agree how any business files will be shared and handled before you provide them."],
+];
+---
+
+<Layout
+  title="Excel reporting automation | Trellis Works"
+  description="Still rebuilding the same Excel report every month? Trellis Works builds repeatable reporting workflows around your source files, with checks and a clear team handoff. Book a 15-minute scoping call."
+  canonical="https://trellisworks.ca/excel-reporting/"
+  image="/brand/excel-reporting-social.png"
+>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="report-header">
+    <div class="report-container header-row">
+      <a class="report-brand" href="/" aria-label="Trellis Works home">
+        <img src="/brand/trellisworks-mark.svg" width="42" height="42" alt="" />
+        <span>TRELLIS <span class="brand-works">WORKS</span></span>
+      </a>
+      <a class="header-contact" href="#talk">Talk through your report <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="report-hero">
+      <div class="report-container hero-grid">
+        <div class="hero-message">
+          <p class="report-eyebrow"><span class="eyebrow-line"></span> Excel reporting automation</p>
+          <h1>The same report.<br />Every month.<br /><span>Less rebuilding.</span></h1>
+          <p class="hero-description">We automate the Excel report your team keeps rebuilding, from recurring source files to a report that’s ready for review.</p>
+          <div class="hero-cta">
+            <a class="report-button" href={campaign.bookingUrl} target="_blank" rel="noopener noreferrer" data-campaign-event="booking_click" data-placement="hero">Talk through your report <span aria-hidden="true">↗</span></a>
+            <span class="cta-note">A {campaign.durationMinutes}-minute scoping call. Start with one report.</span>
+          </div>
+        </div>
+
+        <div class="workflow-visual" role="img" aria-label="Illustrative workflow: combine existing exports and spreadsheets, apply your reporting rules and checks, then prepare an Excel report for your team to review.">
+          <div class="visual-topline"><span class="visual-dot"></span> A repeatable reporting workflow <span class="visual-number">01</span></div>
+          <div class="source-files">
+            <div class="file-row"><span class="file-icon">CSV</span><span>Accounting export</span><span class="file-suffix">.csv</span></div>
+            <div class="file-row"><span class="file-icon">CSV</span><span>Sales export</span><span class="file-suffix">.csv</span></div>
+            <div class="file-row"><span class="file-icon file-xlsx">XLS</span><span>Team tracking sheet</span><span class="file-suffix">.xlsx</span></div>
+          </div>
+          <div class="flow-connector"><span></span><span aria-hidden="true">↓</span><span></span></div>
+          <div class="rules-strip"><span class="rules-mark" aria-hidden="true">✳</span><div><strong>Your reporting rules</strong><span>Combine · prepare · check</span></div><span class="rules-status">Built around your process</span></div>
+          <div class="flow-connector short"><span></span><span aria-hidden="true">↓</span><span></span></div>
+          <div class="output-report">
+            <div class="output-title"><span class="file-icon file-xlsx">XLS</span><div><strong>Your recurring report</strong><span>Prepared for your team to review</span></div><span class="output-check" aria-hidden="true">✓</span></div>
+            <div class="sheet-grid" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+            <div class="output-footer"><span>Checks &amp; exceptions included</span><span aria-hidden="true">↳</span></div>
+          </div>
+          <p class="visual-caption">Illustrative process. Your files, rules and review steps define the build.</p>
+        </div>
+      </div>
+      <div class="report-container hero-bottom"><span>Work with the files you already use</span><span>Keep the checks that matter</span><span>Leave your team able to run it</span></div>
+    </section>
+
+    <section class="report-section friction-section" aria-labelledby="friction-title">
+      <div class="report-container section-split">
+        <div><p class="report-eyebrow">A familiar kind of work</p><h2 id="friction-title">The report is useful.<br />The rebuild is the problem.</h2></div>
+        <div class="friction-copy"><p>Export the data. Copy it into last month’s workbook. Match the columns. Fix the dates. Check the totals. Do it again next month.</p><p>We turn those recurring preparation steps into a process your team can run and check, without starting from scratch each time.</p><a class="text-link" href="#what-we-build">See what we build <span aria-hidden="true">↓</span></a></div>
+      </div>
+    </section>
+
+    <section class="report-section deliverables-section" id="what-we-build" aria-labelledby="deliverables-title">
+      <div class="report-container">
+        <div class="section-heading"><div><p class="report-eyebrow">The implementation</p><h2 id="deliverables-title">One report.<br />A process your team can use.</h2></div><p>We agree the sources, rules and finished output before building. The result includes the workflow and the handoff.</p></div>
+        <div class="deliverable-list">
+          <article class="deliverable"><span class="item-number">01</span><h3>Prepare the data</h3><p>Bring agreed exports and spreadsheets together. Apply the cleaning, matching and calculations your report needs.</p></article>
+          <article class="deliverable"><span class="item-number">02</span><h3>Produce the report</h3><p>Build the recurring output around the workbook or format your team needs to use.</p></article>
+          <article class="deliverable"><span class="item-number">03</span><h3>Make exceptions visible</h3><p>Include agreed reconciliation checks and flag missing or unexpected data for staff review.</p></article>
+          <article class="deliverable"><span class="item-number">04</span><h3>Hand it over properly</h3><p>Test it with your report owner. Provide operating instructions and show your team how to run and check it.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="report-section process-section" aria-labelledby="process-title">
+      <div class="report-container">
+        <p class="report-eyebrow">Working with Trellis Works</p><h2 id="process-title">From “there must be a better way”<br />to a working reporting process.</h2>
+        <ol class="process-list">
+          <li><span class="process-count">1</span><h3>Talk through one report</h3><p>In a {campaign.durationMinutes}-minute call, tell us what it’s for, where the data comes from and what you do by hand.</p></li>
+          <li><span class="process-count">2</span><h3>Agree the scope</h3><p>We establish what’s feasible and what the build includes, then quote the work. Any separate discovery is explained first.</p></li>
+          <li><span class="process-count">3</span><h3>Build, check and hand over</h3><p>We implement the agreed workflow, validate the output with your team and help you put it into use.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="report-section fit-section" aria-labelledby="fit-title">
+      <div class="report-container fit-grid">
+        <div><p class="report-eyebrow">A good place to start</p><h2 id="fit-title">You know the report.<br />We help make it repeatable.</h2><p class="fit-intro">A useful first project has a recurring report, accessible source files and someone who knows what a correct result looks like.</p></div>
+        <ul class="fit-list"><li><span aria-hidden="true">✓</span> You prepare the same report weekly, monthly or quarterly.</li><li><span aria-hidden="true">✓</span> The data comes from exports, spreadsheets or other agreed sources.</li><li><span aria-hidden="true">✓</span> Your team repeats the same preparation and checking steps.</li><li><span aria-hidden="true">✓</span> You want help getting a reliable workflow into use.</li></ul>
+      </div>
+    </section>
+
+    <section class="report-section faq-section" aria-labelledby="faq-title">
+      <div class="report-container faq-grid"><div><p class="report-eyebrow">Before we talk</p><h2 id="faq-title">A few practical<br />questions.</h2></div><div class="faq-list">{faqs.map(([question, answer]) => <details><summary>{question}<span aria-hidden="true">+</span></summary><p>{answer}</p></details>)}</div></div>
+    </section>
+
+    <section class="report-section talk-section" id="talk" aria-labelledby="talk-title">
+      <div class="report-container talk-grid">
+        <div><p class="report-eyebrow">Start with the report on your desk</p><h2 id="talk-title">Let’s talk through<br />your report.</h2><p>Tell us what you’re preparing, where the data comes from and the part you wish you could stop doing by hand.</p><p class="talk-small">No spreadsheet upload needed. We’ll use the call to understand the workflow and discuss a practical next step.</p></div>
+        <div class="booking-card"><div class="booking-duration"><span aria-hidden="true">◷</span> {campaign.durationMinutes} minutes · Google Meet</div><h3>Report automation<br />scoping call</h3><p>Pick a time with Trellis Works. You’ll see available times in your local timezone.</p><a class="report-button" href={campaign.bookingUrl} target="_blank" rel="noopener noreferrer" data-campaign-event="booking_click" data-placement="booking_card">Choose a time <span aria-hidden="true">↗</span></a><p class="booking-note">No commitment to a project.</p><div class="booking-email"><span>Prefer email?</span><a href={reportingEmail.gmail} target="_blank" rel="noopener noreferrer" data-campaign-event="enquiry_click" data-placement="gmail">Open an enquiry in Gmail <span aria-hidden="true">↗</span></a><a class="email-address" href={reportingEmail.mailto} data-campaign-event="enquiry_click" data-placement="email">{campaign.contactEmail}</a></div></div>
+      </div>
+    </section>
+  </main>
+  <footer class="report-footer"><div class="report-container footer-row"><a href="/" class="footer-name">Trellis Works</a><span>Practical systems. Built around your work.</span><div><a href="/#about">About Trellis</a><a href="/privacy/">Privacy</a></div></div></footer>
+
+  <script>
+    import { initCampaignEvents } from "../scripts/campaign-events";
+    initCampaignEvents();
+  </script>
+</Layout>
