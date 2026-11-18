@@ -1,46 +1,21 @@
-# Next session: restore the GitHub deployment workflow
+# Continuation: campaign setup
 
-Updated November 17, 2026. Josh has seen and approved the landing page’s direction. He wants to
-resolve the deployment setup here shortly; a separate agent will handle ad-account setup using
-the [ad setup brief](https://app.notion.com/p/41b07c44d1ea81a2b7d6e0736f56cf9c).
+Updated November 17, 2026. **GitHub deployment repair is complete.** Both refreshed credentials
+authenticated; all seven preserved local commits were pushed normally to `main`. Cloudflare
+successfully deployed `77d71d866545382f6682905b42d28f4d1984f80e` through `github:push`, deployment
+`cbd0c1c1-09d3-4c09-afb8-a98686fcece8`. Subsequent documentation-only commits follow the same workflow.
+No force-push or additional direct upload was used. Future deployments must use GitHub → Cloudflare.
 
-## Current verified state
+## Remaining work
 
-- Live website: https://trellisworks.ca/
-- Live campaign: https://trellisworks.ca/excel-reporting/
-- Booking: https://calendar.app.google/uV1Mua1VdEaYQ73i7 — 15-minute Report Automation Scoping Call.
-- Established checkout: /Users/josh/Documents/New project/trellisworks-site
-- Repository: https://github.com/Trellis-Works/trellisworks-site, production branch main.
-- Hosting: existing Cloudflare Pages project trellisworks-site-git. GitHub deployment integration
-  remains enabled; it was not detached or replaced.
-- Current production: direct/ad_hoc deployment a15b116c-06fa-466c-80ca-3e540e1f62bc, application
-  commit d2712acefec214db4e840a3c00719722cf43cb01.
-- Remote main, last checked: 30f09ebd27989764199389872f4cc7aacda44854. Local main contains the
-  application commit plus documentation/brief commits. Refresh both before acting.
+- Ad-account setup is already moving with the other agent. Use the
+  [ad setup brief](https://app.notion.com/p/41b07c44d1ea81a2b7d6e0736f56cf9c).
+- Josh will manage personal/work calendar busy-time synchronization later.
+- Google booking → Notion CRM ingestion remains unbuilt; follow the proposal in the website runbook.
+- Additional analytics remain explicitly deferred. No ad launch/spend was performed in this chat.
+- Maintain the existing approved time entry; actual human hours remain unset while work continues.
 
-## Problem and agreed next step
-
-The earlier agent bypassed the established GitHub → Cloudflare flow after a push failed. The page
-is live, but source and production are out of sync. Josh explicitly objected to that bypass.
-**Do not make another direct deployment.** Repair the normal source/deployment flow while preserving
-the landing page and all unrelated work. Do not describe the whole setup as finished until that works.
-
-Normal push lacked usable credentials; both saved GitHub tokens returned 401 Bad credentials.
-Never print or paste tokens, inspect unrelated credentials or create new access without the
-appropriate authorization. Use the supported existing-account authentication flow with Josh.
-
-1. Re-read applicable AGENTS.md/Notion instructions; inspect git status and current remote main.
-2. Restore authorized GitHub write access. Preserve local commits. If remote changed, reconcile
-   carefully; do not reset to old remote source or force-push.
-3. Run the production build and campaign checks if application inputs changed; then push local
-   main through the normal GitHub flow.
-4. Verify Cloudflare records a successful production deployment triggered by the pushed GitHub
-   commit, rather than another ad_hoc upload. Check the .ca homepage, landing route and booking URL.
-5. Remove the temporary source-sync exception from the current-status portions of README and
-   MAINTENANCE once resolved, while retaining the historical incident/rationale in Notion.
-6. Update the existing website runbook, marketing record and approved active time entry.
-
-## Product and remaining choices
+## Verified product
 
 The offer is implementation of one recurring Excel report workflow: source exports, preparation,
 checks, staff review and team handoff. No assessment/sample lead magnet, promised savings, fee or

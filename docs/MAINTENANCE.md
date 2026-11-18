@@ -7,36 +7,17 @@ Source: `Trellis-Works/trellisworks-site`, branch `main`. Local checkout:
 Cloudflare Pages project: `trellisworks-site-git`. A push to `main` builds and deploys production.
 Keep this guide and the campaign handoff synchronized with material changes.
 
-### Current production exception: source push pending
+### GitHub deployment workflow restored
 
-**Josh's subsequent direction:** restore the established GitHub-triggered deployment workflow.
-Do not make another direct production upload when GitHub authentication fails. Resolve source
-authentication and synchronization first. The direct-deploy command below records what happened;
-it is not the procedure for the next session. See [CONTINUATION.md](CONTINUATION.md).
+On November 17, Josh refreshed the existing GitHub credentials. All seven preserved campaign and
+handoff commits were pushed normally to `main`, without force-pushing. Cloudflare production
+successfully deployed commit `77d71d866545382f6682905b42d28f4d1984f80e` through `github:push`:
+`cbd0c1c1-09d3-4c09-afb8-a98686fcece8`.
 
-The campaign is **live and verified** through direct Cloudflare Pages deployment
-`a15b116c-06fa-466c-80ca-3e540e1f62bc`, built from local commit
-`d2712acefec214db4e840a3c00719722cf43cb01`. Its production URL is
-<https://a15b116c.trellisworks-site-git.pages.dev>; the custom domain serves the same campaign.
-Both saved GitHub tokens returned `401 Bad credentials`, and a normal push had no usable credential.
-`origin/main` therefore remains at the earlier baseline. **Do not redeploy that older remote branch**
-before synchronizing these local commits, or it will remove the campaign.
-
-Restore the repository's normal GitHub authentication through the supported login/credential flow,
-then run `git push origin main` from this checkout. No force-push is needed. The normal integration
-will rebuild the same application from the synchronized source; confirm the resulting commit/deploy.
-Do not paste fresh tokens into chat, source, Git remote URLs or command arguments.
-
-Direct deployment used the existing Cloudflare credential, passed only through the subprocess
-environment to the installed Wrangler CLI:
-
-```sh
-node /Users/josh/.npm/_npx/d77349f55c2be1c0/node_modules/wrangler/bin/wrangler.js pages deploy dist --project-name trellisworks-site-git --branch main --commit-hash <tested-commit>
-```
-
-The environment requires `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID`; read them securely from
-the existing credential file. The npm cache path is machine-specific; use an installed official
-Wrangler CLI if it changes. This is a temporary deployment exception, not a switch to a new host.
+Future site changes must be committed and pushed through GitHub. If authentication fails, resolve
+it before deployment; do not upload directly. Never paste tokens into chat, source, remote URLs or
+command arguments. The earlier direct deployment was an incident, now superseded by the verified
+normal workflow. Historical details remain in the Notion website operating notes.
 
 ## What changed on November 17, 2026
 

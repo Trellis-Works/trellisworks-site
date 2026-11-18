@@ -47,7 +47,7 @@ https://trellisworks.ca/excel-reporting/?utm_source=chatgpt&utm_medium=paid&utm_
 
 Additional website analytics were explicitly deferred by Josh. Browser event hooks exist, but no collector, stored event counts or ad conversion integration is connected. Do not configure new analytics unless asked. Use actual ad impressions/clicks, Google appointments and sales outcomes; an outbound booking click is not a completed booking. Appointment-level UTM attribution is unverified.
 
-The website was deployed directly to Cloudflare after GitHub authentication failed. It is live, but GitHub holds older source. Deployment repair stays with the original website chat; do not deploy the older repository over the page.
+The website source is now synchronized to GitHub main. Cloudflare successfully deployed commit 77d71d8 through its normal GitHub push integration on November 17. Future website changes must use GitHub → Cloudflare.
 
 Return the campaign/account identifier, exact saved copy/URL, review status, budget/credit findings and remaining action for Josh. Keep credentials and payment details out of chat and artifacts.
 

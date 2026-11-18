@@ -9,9 +9,9 @@ The [Excel reporting campaign](https://trellisworks.ca/excel-reporting/) is conf
 `src/config/excel-reporting.ts`. Ready-to-use ad copy and launch instructions are in
 [campaigns/excel-reporting.md](campaigns/excel-reporting.md).
 
-**Deployment note, November 17:** the reporting page is live through a direct Cloudflare Pages
-deployment. GitHub's saved credentials expired, so the local campaign commits still need to be pushed
-to `origin/main`. Read the maintenance guide before deploying from the remote branch.
+**Deployment verified, November 17:** campaign source is synchronized to GitHub `main`, and
+Cloudflare successfully deployed commit `77d71d8` through the normal `github:push` integration.
+Future changes must follow GitHub → Cloudflare; do not bypass a failed push with a direct upload.
 
 ## Local use
 
