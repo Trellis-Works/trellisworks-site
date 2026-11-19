@@ -13,7 +13,7 @@ The [Excel reporting campaign](https://trellisworks.ca/excel-reporting/) is conf
 Cloudflare successfully deployed commit `77d71d8` through the normal `github:push` integration.
 Future changes must follow GitHub → Cloudflare; do not bypass a failed push with a direct upload.
 
-**Approved for publication November 19:** `/partners/` is the shareable adviser
+**Published and verified November 19:** `/partners/` is the shareable adviser
 overview; `/solutions/` links to the existing Excel page and new `/internal-knowledge/`,
 `/email-workflows/` and `/onboarding/` pages. Each solution has one permanent URL for organic
 visitors and future ads. See the [current publication checkpoint](docs/CONTINUATION.md).

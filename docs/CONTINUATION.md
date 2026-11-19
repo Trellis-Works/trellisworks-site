@@ -2,17 +2,19 @@
 
 ## November 19 publication and ad checkpoint
 
-Prepared locally: `/partners/`, `/solutions/`, `/internal-knowledge/`, `/email-workflows/`,
+Published: `/partners/`, `/solutions/`, `/internal-knowledge/`, `/email-workflows/`,
 `/onboarding/`, homepage navigation and sitemap. Josh explicitly approved publication of these
-exact pages and navigation links on November 19. Deploy through GitHub → Cloudflare.
+exact pages and navigation links on November 19. GitHub → Cloudflare production succeeded:
+application commit `328d547c04adaac7afa878b7144c990ee37cfd31`, deployment
+`58b2b7b6-7ae9-471e-bb57-6bc2887da35a`, trigger `github:push`.
 The adviser page preserves the reviewed broad capabilities positioning, adds email organization
 and drafting, and links to solutions. Public content contains no medical-client case studies.
 New solution pages use email enquiries; do not silently send those visitors to the report-specific
 Google schedule. The existing Excel page and its booking configuration are unchanged.
 
 The production build, four campaign tests and eight-page artifact crawl pass. No visual browser
-QA was performed in this chat. Verify the GitHub-triggered deployment matches the publication
-commit and check all live routes before marking publication complete.
+QA was performed in this chat. All six relevant live pages returned HTTP 200 with a standard
+user agent; partner headline and both unchanged Excel booking destinations were verified.
 
 Josh approved raising the saved Excel campaign lifetime cap to CA$60 and keeping it paused.
 The update and paused state were read back. CA$1 average CPC target and Canada targeting remain.
@@ -20,9 +22,9 @@ Josh reports CA$60 available credit; the promotion API returns no active promoti
 that API response as independent credit verification. Credit-only spending remains the boundary.
 Launch only after Josh personally verifies the live pages and booking and instructs activation.
 
-Megin's existing Gmail draft must link to the published `/partners/` page instead of the earlier
-capabilities overview. Revise the existing draft after publication, preserve recipients/thread,
-quoted history and approved signature/logo, verify once and leave unsent.
+Megin's existing Gmail draft was updated after publication to link to `/partners/` instead of
+the long capabilities overview. Read-back verified recipients/thread, reply metadata, quoted
+history, one current-message signature and matching inline logo. It remains unsent.
 Reuse the approved existing workstream time entry; human hours remain unconfirmed.
 
 Updated November 17, 2026. **GitHub deployment repair is complete.** Both refreshed credentials

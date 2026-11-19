@@ -7,7 +7,7 @@ Source: `Trellis-Works/trellisworks-site`, branch `main`. Local checkout:
 Cloudflare Pages project: `trellisworks-site-git`. A push to `main` builds and deploys production.
 Keep this guide and the campaign handoff synchronized with material changes.
 
-## Partner and solution pages prepared November 19
+## Partner and solution pages published November 19
 
 `src/pages/partners.astro` contains the public adviser overview. `src/pages/solutions.astro`
 is the solution index. `src/pages/[solution].astro` generates internal knowledge, email workflows
@@ -22,6 +22,9 @@ answers include sources and checks without an accuracy guarantee; email drafts r
 Scope and quotes follow discussion; no new prices or delivery guarantees are published.
 
 Josh explicitly approved these pages and navigation links for publication on November 19.
+Production application commit `328d547` deployed successfully through `github:push`, deployment
+`58b2b7b6-7ae9-471e-bb57-6bc2887da35a`. All six relevant live pages returned HTTP 200 and
+both Excel booking links remain correct. No visual browser review was performed in this chat.
 Ad launch is separate: CA$60 total cap, paused until Josh verifies live pages/booking and authorizes it.
 
 ### GitHub deployment workflow restored
