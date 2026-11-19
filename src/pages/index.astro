@@ -105,24 +105,25 @@ const contactHref = `https://mail.google.com/mail/?${contactParams.toString()}`;
             </div>
           </article>
 
-          <article class="service-item">
+          <article class="service-item" id="systems-build">
             <div class="service-number">3.0</div>
             <div class="service-main">
               <h3>Intelligent Systems Build</h3>
               <p class="service-tagline">Turn the opportunity into something your team can actually use.</p>
               <p>Trellis Works designs and builds practical AI-enabled tools, automations and integrations around real business workflows. That might include a system that answers and routes incoming inquiries, searches internal knowledge, assembles recurring reports, moves information between systems, drafts routine communications or supports a team through a multi-step workflow.</p>
             </div>
-            <div class="service-side">
+            <a class="service-side service-examples-link" href="#solutions" aria-label="See practical solution examples">
               <p class="service-side-title">Examples</p>
               <ul>
                 <li>AI assistants and workflow agents</li>
                 <li>Knowledge and document retrieval</li>
-                <li><a href="/excel-reporting/">Excel reporting automation</a></li>
+                <li>Excel reporting automation</li>
                 <li>Email and inquiry workflows</li>
                 <li>System integrations</li>
                 <li>Custom internal tools</li>
               </ul>
-            </div>
+              <span class="service-examples-label">See examples</span>
+            </a>
           </article>
 
           <article class="service-item">
@@ -646,6 +647,30 @@ const contactHref = `https://mail.google.com/mail/?${contactParams.toString()}`;
     .service-side {
       padding-left: 24px;
       border-left: 1px solid rgba(169, 118, 47, 0.45);
+    }
+
+    .service-examples-link {
+      display: block;
+      transition: background-color 160ms ease, border-color 160ms ease;
+    }
+
+    .service-examples-link:hover {
+      background: rgba(169, 118, 47, 0.05);
+      border-color: var(--brass);
+    }
+
+    .service-examples-link:focus-visible {
+      outline: 3px solid var(--brass);
+      outline-offset: 6px;
+    }
+
+    .service-examples-label {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 14px;
+      color: var(--ink);
+      text-decoration: underline;
+      text-underline-offset: 4px;
     }
 
     .service-side-title {
