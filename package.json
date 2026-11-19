@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "test:campaign": "node --test tests/campaign.test.mjs && python3 scripts/check-built-site.py",
+    "test:campaign": "node --test tests/campaign.test.mjs tests/openai-measurement.test.mjs && python3 scripts/check-built-site.py",
     "preview": "astro preview"
   },
   "devDependencies": {

@@ -1,0 +1,21 @@
+<button class="measurement-settings" type="button" data-measurement-settings>Ad measurement settings</button>
+<section class="measurement-panel" data-measurement-panel hidden aria-label="Ad measurement choice">
+  <p>Allow ad measurement cookies?</p>
+  <p>We use OpenAI’s pixel to measure page views and clicks to our booking page and connect them to ChatGPT ads. You can decline and still book a call. <a href="/privacy/">Privacy details</a></p>
+  <div><button type="button" data-measurement-choice="allow">Allow measurement</button><button type="button" data-measurement-choice="decline">Decline</button></div>
+</section>
+<script>
+  import { initOpenAIMeasurement } from "../scripts/openai-measurement";
+  initOpenAIMeasurement();
+</script>
+<style>
+  .measurement-settings { display:block; margin:16px auto; padding:8px 12px; border:0; background:transparent; color:#2e3742; text-decoration:underline; font:inherit; font-size:14px; cursor:pointer; }
+  .measurement-panel { position:fixed; bottom:16px; left:16px; right:16px; max-width:600px; z-index:100; padding:22px; background:#fff; color:#2e3742; border:1px solid #a9762f; border-radius:8px; box-shadow:0 6px 30px #0003; font-size:16px; }
+  .measurement-panel[hidden] { display:none; }
+  .measurement-panel p { margin:0 0 12px; line-height:1.5; }
+  .measurement-panel p:first-child { font-weight:700; }
+  .measurement-panel a { color:inherit; text-decoration:underline; }
+  .measurement-panel div { display:flex; flex-wrap:wrap; gap:12px; }
+  .measurement-panel button { font:inherit; padding:10px 16px; border:1px solid #2e3742; border-radius:4px; background:#fff; color:#2e3742; cursor:pointer; }
+  .measurement-panel button:focus-visible,.measurement-settings:focus-visible { outline:3px solid #a9762f; outline-offset:3px; }
+</style>

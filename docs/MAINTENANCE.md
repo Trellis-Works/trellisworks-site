@@ -124,31 +124,29 @@ The secondary email actions open an unsent Gmail draft or the visitor's email cl
 Fallback text displays the address so it can be copied. No website database, upload or lead form
 is present. Google manages appointment details/notifications under its own service.
 
-## Analytics: explicit deferred setup
+## Analytics: consent-gated OpenAI measurement
 
-Josh explicitly chose **“Leave additional analytics setup for later”** on November 17.
-Do not describe instrumentation as recorded conversion reporting.
+November 19: Josh supplied pixel `6t4ZMHXfpzY86EcD2TpKiS` and authorized publishing tracking
+and the privacy update. This supersedes the November 17 deferral for this specific integration.
+`src/components/AdMeasurement.astro` and `src/scripts/openai-measurement.ts` run only on the Excel
+landing page. Before acceptance no OpenAI SDK loads. Choice is stored as `trellis-ad-measurement-v1`
+in localStorage; unavailable storage means session-only choice. Declining calls SDK consent false
+if loaded; settings allow later withdrawal. Debug is false. Events use opt_out true.
 
-The page currently prepares these in-memory `window.dataLayer` events and also dispatches
-`trellis:campaign` CustomEvents:
-
-| Event | Meaning |
+| OpenAI event | Meaning |
 | --- | --- |
-| `trellis_landing_view` | Page script initialized; not a unique visitor count |
-| `trellis_booking_click` | Visitor clicked a link to Google booking; not a confirmed booking |
-| `trellis_enquiry_click` | Visitor clicked an email/Gmail link; not a sent enquiry |
+| `page_viewed` | A consented landing-page view; not a unique person |
+| custom `excel_reporting_booking_click` | Click to Google booking; not a confirmed appointment |
 
-There is **no network tracking endpoint, connected analytics provider, durable event store,
-analytics cookie, identity, session identifier or ad-account conversion integration**.
-These hooks are ready for a later separately configured analytics listener. Until that happens,
-use the ad account for impressions/clicks and actual Google appointments/sales records for outcomes.
-Do not promise a historical event backfill; browser memory is transient.
+Existing bounded `trellis:campaign`/dataLayer hooks remain in memory. No backend, manual advanced
+matching identifiers, revenue values or completed-booking event was added. The SDK handles click
+reference cookies. Automatic advanced matching is controlled by OpenAI pixel settings; no contact
+form exists on this landing page. Privacy copy describes cookies, transmission and withdrawal.
+Google appointment-level attribution remains unverified. Do not invent a historical backfill.
 
-Dimensions are the fixed campaign name, placement and allowlisted `utm_*` values. Arbitrary URL
-values are normalized; no email, report content, full URL or referrer enters these hooks.
-There is no completed-booking event: a cross-domain outbound click cannot establish completion.
-Google may not retain the page UTMs in appointment records. Do not claim individual appointment
-attribution unless a future supported integration is verified.
+Test receipt using Ads Manager’s Web Pixel Test session: accept measurement, click either booking
+CTA, inspect the two expected events. Account-side receipt and custom conversion configuration
+require Josh’s verification. Source: https://developers.openai.com/ads/measurement-pixel (November 19).
 
 Initial ad URL:
 

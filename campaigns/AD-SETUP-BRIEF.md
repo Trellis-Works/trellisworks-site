@@ -1,3 +1,26 @@
+<!-- Current tracking checkpoint supersedes historical deferred-analytics notes below. -->
+## OpenAI measurement — November 19, 2026
+
+Josh supplied Web Pixel `6t4ZMHXfpzY86EcD2TpKiS` and explicitly authorized publication in the
+conversion-setup chat. The Excel landing page now includes an optional ad-measurement choice:
+no SDK load before acceptance; acceptance sends `page_viewed` and the custom event
+`excel_reporting_booking_click`. Decline/withdrawal disables measurement; the SDK removes
+its attribution cookies on withdrawal. Settings can be reopened at the bottom of the page.
+Debug is off. No manual customer identifiers or invented revenue are sent.
+Josh also requested the Excel page enquiry destination change to founders@trellisworks.ca;
+both Gmail and mailto links now use that address.
+Booking clicks are secondary funnel actions, never completed appointments or submitted leads.
+Google appointment completion/attribution remains unconnected. UTMs alone cannot provide it.
+
+After deployment, Josh should run Ads Manager → Conversions → Data Source → pixel menu → Test
+against the Excel URL, accept measurement, and click a booking link. Expect `page_viewed`
+and custom `excel_reporting_booking_click`. Configure a custom conversion with that exact
+name if desired, labelled “Excel reporting — booking link click”. Receipt and account-side
+conversion configuration remain unverified until checked in Ads Manager. Do not recreate the
+campaign or alter budgets/optimization just to add tracking. Notion currently requires reauthentication;
+canonical website/ad records need this checkpoint after reconnection. Deployment status is recorded
+in this chat until verified.
+
 # Excel reporting ads — agent setup brief
 
 ## Current state — November 19 launch and reporting

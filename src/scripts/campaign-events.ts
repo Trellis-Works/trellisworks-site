@@ -1,5 +1,5 @@
-// Instrumentation only: no analytics provider, storage or network transmission.
-// Josh deferred additional analytics configuration on 2026-11-17.
+// Bounded in-memory campaign hooks. OpenAI measurement is separately consent-gated
+// in openai-measurement.ts; these hooks never transmit arbitrary URL values.
 export function campaignAttribution(search: string) {
   const params = new URLSearchParams(search);
   const values = {

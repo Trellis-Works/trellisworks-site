@@ -29,7 +29,8 @@ test('booking and email fallback destinations use the agreed campaign', () => {
   assert.equal(excelReporting.bookingUrl, 'https://calendar.app.google/uV1Mua1VdEaYQ73i7');
   const gmail = new URL(reportingEmail.gmail);
   assert.equal(gmail.hostname, 'mail.google.com');
-  assert.equal(gmail.searchParams.get('to'), 'info@trellisworks.ca');
+  assert.equal(gmail.searchParams.get('to'), 'founders@trellisworks.ca');
+  assert.equal(new URL(reportingEmail.mailto).pathname, 'founders@trellisworks.ca');
   assert.match(gmail.searchParams.get('body'), /steps we do by hand/);
   assert.equal(new URL(reportingEmail.mailto).protocol, 'mailto:');
 });

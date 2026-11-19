@@ -1,5 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import AdMeasurement from "../components/AdMeasurement.astro";
 import { excelReporting as campaign, reportingEmail } from "../config/excel-reporting";
 import "../styles/excel-reporting.css";
 
@@ -104,6 +105,7 @@ const faqs = [
   </main>
   <footer class="report-footer"><div class="report-container footer-row"><a href="/" class="footer-name">Trellis Works</a><span>Practical systems. Built around your work.</span><div><a href="/#about">About Trellis</a><a href="/privacy/">Privacy</a></div></div></footer>
 
+  <AdMeasurement />
   <script>
     import { initCampaignEvents } from "../scripts/campaign-events";
     initCampaignEvents();

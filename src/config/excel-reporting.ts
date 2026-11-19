@@ -1,7 +1,7 @@
 // Public campaign configuration. No credentials belong in this file.
 export const excelReporting = {
   bookingUrl: "https://calendar.app.google/uV1Mua1VdEaYQ73i7",
-  contactEmail: "info@trellisworks.ca",
+  contactEmail: "founders@trellisworks.ca",
   durationMinutes: 15,
   campaign: "excel_reporting",
   landingPath: "/excel-reporting/",
