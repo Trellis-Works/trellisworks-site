@@ -2,7 +2,7 @@
 const links = [
   ["Home", "/"], ["Services", "/#services"], ["Solutions", "/#solutions"],
   ["Approach", "/#approach"], ["About", "/#about"],
-  ["For advisers", "/partners/"], ["Contact", "/#contact"],
+  ["Contact", "/#contact"], ["For advisers", "/partners/"],
 ];
 const contactHref = `https://mail.google.com/mail/?${new URLSearchParams({
   view: "cm", fs: "1", to: "info@trellisworks.ca", su: "Let's talk about working together",
@@ -75,10 +75,11 @@ const contactHref = `https://mail.google.com/mail/?${new URLSearchParams({
       framePending = false;
       const readingLine = (header?.getBoundingClientRect().height ?? 111) + 32;
       let activeLink = homeLink;
-      // Later nested sections (Solutions inside Services) take precedence.
+      // Each nav section stays active until the next nav section begins.
+      // This avoids returning to Services after its nested Solutions content.
       for (const { link, section } of sections) {
         const rect = section.getBoundingClientRect();
-        if (rect.top <= readingLine && rect.bottom > readingLine) activeLink = link;
+        if (rect.top <= readingLine) activeLink = link;
       }
       const atPageEnd = window.scrollY > 0 &&
         window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2;

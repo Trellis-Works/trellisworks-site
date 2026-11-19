@@ -15,6 +15,8 @@ logo/header style. Home is explicit; Solutions links to `/#solutions` under home
 For advisers links to the separate `/partners/` page. Original section links remain in the nav.
 The homepage underline follows the reading position below the sticky header, including nested
 Solutions, reverse scrolling, hash navigation and short Contact at the document bottom.
+Each nav section remains active until the next begins, so Solutions stays active through the
+engagement area rather than jumping back to Services. For advisers follows Contact in the menu.
 Separate pages retain page-based highlighting. No history/hash entries are added while scrolling.
 
 `SolutionExamples.astro` provides the four homepage solution examples before

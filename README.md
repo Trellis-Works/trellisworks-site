@@ -17,8 +17,9 @@ Future changes must follow GitHub → Cloudflare; do not bypass a failed push wi
 overview; homepage `/#solutions` under Services links to the existing Excel page and new `/internal-knowledge/`,
 `/email-workflows/` and `/onboarding/` pages. Each solution has one permanent URL for organic
 visitors and future ads. See the [current publication checkpoint](docs/CONTINUATION.md).
-The shared original-style header includes Home, Services, Solutions, Approach, About, For advisers
-and Contact. On the homepage its underline follows the visible section as visitors scroll.
+The shared original-style header includes Home, Services, Solutions, Approach, About, Contact
+and For advisers. On the homepage its underline advances to each section as visitors scroll,
+keeping Solutions active until Approach rather than returning to Services.
 Ways to work together describes Project delivery and Embedded support. The older `/solutions/`
 index remains available for existing links.
 

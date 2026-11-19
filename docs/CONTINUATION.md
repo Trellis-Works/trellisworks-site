@@ -2,6 +2,10 @@
 
 ## Approved navigation and offering refinement — November 19
 
+Latest correction requested by Josh: keep Solutions underlined until Approach begins, so downward
+scrolling never returns to Services after Solutions. For advisers follows Contact in primary nav.
+Continuous-scroll and reverse-scroll compiled-script checks pass.
+
 Josh approved the current preview for publication, adding a requirement that the underline follow
 the visible homepage section. Implemented and checked in the shared `SiteHeader.astro` component.
 Solutions remains in primary nav and jumps to examples under Services, above Ways to work together.
