@@ -1,5 +1,27 @@
 # Excel reporting ads — agent setup brief
 
+## Current state — November 19 launch and reporting
+
+Josh verified the live ad/pages/booking and explicitly authorized launch. The existing Excel ad,
+ad group and campaign are ACTIVE; read-back confirmed CA$60 lifetime cap, CA$1 average CPC target,
+Canada/all platforms and unchanged creative/destination. Delivery is eligible, not proof of impressions.
+Earlier paused/approval-pending notes below are history, not the current instruction.
+
+The short launch update was posted to Slack #founders. One daily 09:00 America/Edmonton local
+standalone cron is ACTIVE: `trellis-excel-ad-daily-slack-update`, fresh chat per run. It requires
+this Mac and its local Slack credential. First unattended report is due November 20; actual run,
+fresh-chat continuation and daily delivery remain pending verification. Do not duplicate this runner.
+Use the current reporting protocol/checkpoint in the canonical ad brief:
+https://app.notion.com/p/41b07c44d1ea81a2b7d6e0736f56cf9c
+All requests and remaining follow-ups:
+https://app.notion.com/p/41d07c44d1ea817382ebfed81ea1f5e0
+
+No conversion source or published Business Agent was configured at setup. Report actual ad activity,
+verified business outcomes and supported audience/need evidence; never invent conversions, infer
+anonymous identities or equate booking clicks with bookings. Read-only reporting does not authorize
+ad changes, extra tracking or email sends. Megin's revised signed draft remains unsent.
+
+
 Canonical Notion brief: https://app.notion.com/p/41b07c44d1ea81a2b7d6e0736f56cf9c
 
 **Purpose:** help Josh set up the first Trellis Works ChatGPT-ad test for recurring Excel reporting. Prepared November 17, 2026. No campaign has been created or launched and no spend authorized in this chat. Follow Josh’s instructions in the new chat for account actions; prepare the exact campaign and budget for review before enabling it.

@@ -32,3 +32,5 @@ Cloudflare Pages should use `npm run build` and publish `dist`.
 The supplied Trellis Works logo assets are stored in `public/brand/`. The public page uses the
 transparent wordmark and trellis mark; the white-background wordmark is retained for use on light
 surfaces. The source brand guide is intentionally kept outside this public repository.
+
+**November 19 launch:** Excel ad/group/campaign are active at CA$60 total, CA$1 average CPC target. Short daily #founders reporting is scheduled at 09:00 Edmonton in a fresh local chat. Track requests and remaining verification in https://app.notion.com/p/41d07c44d1ea817382ebfed81ea1f5e0 and the current Notion ad brief.

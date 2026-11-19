@@ -25,7 +25,7 @@ Josh explicitly approved these pages and navigation links for publication on Nov
 Production application commit `328d547` deployed successfully through `github:push`, deployment
 `58b2b7b6-7ae9-471e-bb57-6bc2887da35a`. All six relevant live pages returned HTTP 200 and
 both Excel booking links remain correct. No visual browser review was performed in this chat.
-Ad launch is separate: CA$60 total cap, paused until Josh verifies live pages/booking and authorizes it.
+Josh subsequently verified the live pages/booking and authorized launch: ad, group and campaign are active at CA$60 total cap and CA$1 average CPC target. The short founder update was sent; daily 09:00 Edmonton reports use one local standalone cron with fresh chats. First unattended report remains pending November 20. Read the live Notion ad brief and Founder work checklist before follow-up; historical paused notes are superseded.
 
 ### GitHub deployment workflow restored
 
