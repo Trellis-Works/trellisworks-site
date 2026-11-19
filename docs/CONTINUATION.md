@@ -1,5 +1,17 @@
 # Continuation: campaign setup
 
+## Approved navigation and offering refinement — November 19
+
+Josh approved the current preview for publication, adding a requirement that the underline follow
+the visible homepage section. Implemented and checked in the shared `SiteHeader.astro` component.
+Solutions remains in primary nav and jumps to examples under Services, above Ways to work together.
+Engagement modes are Project delivery and Embedded support. For advisers remains a separate-page
+nav option. Explicit Home and original section links remain; the original logo/header styling is reused.
+Do not restore the rejected proposal to remove Solutions or For advisers from primary nav.
+Build, four campaign checks, eight-page crawl and compiled-script scroll checks pass. Follow normal
+GitHub → Cloudflare publication and record the exact successful deployment in the canonical Notion
+website record. Ad settings, reporting schedule, booking buttons and Megin email send state unchanged.
+
 ## Current state — November 19 launch and reporting
 
 Josh verified the live ad/pages/booking and explicitly authorized launch. The existing Excel ad,

@@ -7,6 +7,22 @@ Source: `Trellis-Works/trellisworks-site`, branch `main`. Local checkout:
 Cloudflare Pages project: `trellisworks-site-git`. A push to `main` builds and deploys production.
 Keep this guide and the campaign handoff synchronized with material changes.
 
+## Shared navigation and homepage hierarchy — approved November 19
+
+Josh explicitly approved publication of the current preview with a scroll-following active link.
+`src/components/SiteHeader.astro` is mounted by `Layout.astro` on all routes, preserving the original
+logo/header style. Home is explicit; Solutions links to `/#solutions` under homepage Services;
+For advisers links to the separate `/partners/` page. Original section links remain in the nav.
+The homepage underline follows the reading position below the sticky header, including nested
+Solutions, reverse scrolling, hash navigation and short Contact at the document bottom.
+Separate pages retain page-based highlighting. No history/hash entries are added while scrolling.
+
+`SolutionExamples.astro` provides the four homepage solution examples before
+`EngagementOptions.astro`, titled Ways to work together with Project delivery and Embedded support.
+Individual detail/ad URLs and booking buttons remain unchanged; `/solutions/` is retained for old links.
+Production build, campaign checks, all-route link crawl and a compiled-script scroll-state check pass.
+No visual browser test was performed in this update. Publish through GitHub → Cloudflare only.
+
 ## Partner and solution pages published November 19
 
 `src/pages/partners.astro` contains the public adviser overview. `src/pages/solutions.astro`

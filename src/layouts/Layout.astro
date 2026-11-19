@@ -1,4 +1,5 @@
 ---
+import SiteHeader from "../components/SiteHeader.astro";
 const {
   title = "Trellis Works | Practical systems for better work",
   description = "Trellis Works helps organizations improve operations, build practical systems, and put useful technology to work.",
@@ -26,6 +27,13 @@ const {
     <title>{title}</title>
   </head>
   <body>
+    <a class="site-skip" href="#main">Skip to content</a>
+    <SiteHeader />
     <slot />
   </body>
 </html>
+
+<style>
+  .site-skip { position:fixed; top:-100px; left:16px; z-index:100; padding:12px 20px; background:#1b2430; color:#f6f4ee; }
+  .site-skip:focus { top:12px; }
+</style>

@@ -14,9 +14,13 @@ Cloudflare successfully deployed commit `77d71d8` through the normal `github:pus
 Future changes must follow GitHub → Cloudflare; do not bypass a failed push with a direct upload.
 
 **Published and verified November 19:** `/partners/` is the shareable adviser
-overview; `/solutions/` links to the existing Excel page and new `/internal-knowledge/`,
+overview; homepage `/#solutions` under Services links to the existing Excel page and new `/internal-knowledge/`,
 `/email-workflows/` and `/onboarding/` pages. Each solution has one permanent URL for organic
 visitors and future ads. See the [current publication checkpoint](docs/CONTINUATION.md).
+The shared original-style header includes Home, Services, Solutions, Approach, About, For advisers
+and Contact. On the homepage its underline follows the visible section as visitors scroll.
+Ways to work together describes Project delivery and Embedded support. The older `/solutions/`
+index remains available for existing links.
 
 ## Local use
 
