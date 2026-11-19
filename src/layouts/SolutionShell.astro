@@ -1,0 +1,37 @@
+---
+import Layout from "./Layout.astro";
+import "../styles/excel-reporting.css";
+const { title, description } = Astro.props;
+---
+<Layout title={`${title} | Trellis Works`} description={description}>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="report-header"><div class="report-container header-row">
+    <a class="report-brand" href="/" aria-label="Trellis Works home"><img src="/brand/trellisworks-mark.svg" width="42" height="42" alt="" /><span>TRELLIS <span class="brand-works">WORKS</span></span></a>
+    <nav aria-label="Primary navigation" class="solution-nav"><a href="/solutions/">Solutions</a><a href="/partners/">For advisers</a></nav>
+  </div></header>
+  <main id="main"><slot /></main>
+  <footer class="report-footer"><div class="report-container footer-row"><a href="/" class="footer-name">Trellis Works</a><span>Practical systems. Built around your work.</span><div><a href="/solutions/">Solutions</a><a href="/partners/">For advisers</a><a href="/privacy/">Privacy</a></div></div></footer>
+</Layout>
+<style is:global>
+  .header-row { height:auto; min-height:88px; padding-block:16px; flex-wrap:wrap; }
+  .report-eyebrow,.cta-note,.booking-note,.talk-small { font-size:14px; }
+  .solution-nav { display:flex; gap:24px; font-size:1rem; flex-wrap:wrap; }
+  .solution-nav a { text-decoration:underline; text-underline-offset:5px; }
+  .solution-overview { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; margin-top:40px; }
+  .solution-tile { display:block; border:1px solid var(--line); padding:30px; text-decoration:none; }
+  .solution-tile:hover { border-color:var(--brass); }
+  .solution-tile h2,.solution-tile h3 { font-size:1.65rem; line-height:1.2; margin-bottom:16px; }
+  .solution-tile p { color:var(--slate); }
+  .solution-tile span { display:block; text-decoration:underline; text-underline-offset:5px; margin-top:20px; }
+  .solution-flow { border:1px solid var(--line); background:white; padding:32px; }
+  .solution-flow ol { padding:0; list-style:none; margin:0; }
+  .solution-flow li { padding:22px 0; border-bottom:1px solid var(--line); font-size:1.15rem; }
+  .solution-flow li:last-child { border-bottom:0; }
+  .solution-flow p { color:var(--slate); font-size:1rem; margin-top:24px; }
+  .solution-flow h2 { font-size:1.5rem; margin-bottom:18px; }
+  .solution-hero h1 { font-size:clamp(2.5rem,4.6vw,4.8rem); }
+  .solution-intro { max-width:820px; }
+  .solution-intro h1 { font-size:clamp(2.5rem,5vw,4.4rem); line-height:1.1; letter-spacing:-.04em; }
+  .solution-contact { overflow-wrap:anywhere; }
+  @media(max-width:650px) { .solution-overview { grid-template-columns:1fr; } .solution-nav { gap:12px; font-size:.9rem; } .solution-flow { padding:24px; } }
+</style>

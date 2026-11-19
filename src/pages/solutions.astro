@@ -1,0 +1,10 @@
+---
+import SolutionShell from "../layouts/SolutionShell.astro";
+import { solutions } from "../config/solutions";
+---
+<SolutionShell title="Solutions" description="Practical implementations for recurring reports, internal knowledge, email workflows and team onboarding. Start with one workflow your team wants to improve.">
+  <section class="report-section"><div class="report-container"><div class="solution-intro"><p class="report-eyebrow">Practical implementations</p><h1>Start with the work<br />you keep repeating.</h1><p class="hero-description">We build systems around the way your team works, with agreed scope, checks and a clear handoff. These are starting points; each project is shaped around the problem.</p></div><div class="solution-overview">
+    <a class="solution-tile" href="/excel-reporting/"><h2>Recurring Excel reports</h2><p>Turn recurring exports and spreadsheet preparation into a repeatable report workflow, with checks and staff review.</p><span>Explore Excel reporting</span></a>
+    {solutions.map(s => <a class="solution-tile" href={`/${s.slug}/`}><h2>{s.label}</h2><p>{s.description}</p><span>Explore {s.label.toLowerCase()}</span></a>)}
+  </div><p class="fit-intro">Advising a client? <a class="text-link" href="/partners/">See how we work with consultants and advisers.</a></p></div></section>
+</SolutionShell>

@@ -1,5 +1,30 @@
 # Continuation: campaign setup
 
+## November 19 publication and ad checkpoint
+
+Prepared locally: `/partners/`, `/solutions/`, `/internal-knowledge/`, `/email-workflows/`,
+`/onboarding/`, homepage navigation and sitemap. Josh explicitly approved publication of these
+exact pages and navigation links on November 19. Deploy through GitHub → Cloudflare.
+The adviser page preserves the reviewed broad capabilities positioning, adds email organization
+and drafting, and links to solutions. Public content contains no medical-client case studies.
+New solution pages use email enquiries; do not silently send those visitors to the report-specific
+Google schedule. The existing Excel page and its booking configuration are unchanged.
+
+The production build, four campaign tests and eight-page artifact crawl pass. No visual browser
+QA was performed in this chat. Verify the GitHub-triggered deployment matches the publication
+commit and check all live routes before marking publication complete.
+
+Josh approved raising the saved Excel campaign lifetime cap to CA$60 and keeping it paused.
+The update and paused state were read back. CA$1 average CPC target and Canada targeting remain.
+Josh reports CA$60 available credit; the promotion API returns no active promotion. Do not treat
+that API response as independent credit verification. Credit-only spending remains the boundary.
+Launch only after Josh personally verifies the live pages and booking and instructs activation.
+
+Megin's existing Gmail draft must link to the published `/partners/` page instead of the earlier
+capabilities overview. Revise the existing draft after publication, preserve recipients/thread,
+quoted history and approved signature/logo, verify once and leave unsent.
+Reuse the approved existing workstream time entry; human hours remain unconfirmed.
+
 Updated November 17, 2026. **GitHub deployment repair is complete.** Both refreshed credentials
 authenticated; all seven preserved local commits were pushed normally to `main`. Cloudflare
 successfully deployed `77d71d866545382f6682905b42d28f4d1984f80e` through `github:push`, deployment

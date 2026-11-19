@@ -7,6 +7,23 @@ Source: `Trellis-Works/trellisworks-site`, branch `main`. Local checkout:
 Cloudflare Pages project: `trellisworks-site-git`. A push to `main` builds and deploys production.
 Keep this guide and the campaign handoff synchronized with material changes.
 
+## Partner and solution pages prepared November 19
+
+`src/pages/partners.astro` contains the public adviser overview. `src/pages/solutions.astro`
+is the solution index. `src/pages/[solution].astro` generates internal knowledge, email workflows
+and onboarding from `src/config/solutions.ts`; `src/layouts/SolutionShell.astro` shares navigation
+and the existing campaign visual style. Each page has a canonical URL and a sitemap entry.
+Use the same permanent solution URL for ads, with campaign tags, rather than duplicate pages.
+No analytics collector was added. New solution enquiries use Gmail/mailto to info@trellisworks.ca;
+the reporting booking link remains specific to the Excel offer. Partner enquiries go to founders.
+
+Public partner examples describe generic capabilities, not medical-client case studies. Knowledge
+answers include sources and checks without an accuracy guarantee; email drafts require review.
+Scope and quotes follow discussion; no new prices or delivery guarantees are published.
+
+Josh explicitly approved these pages and navigation links for publication on November 19.
+Ad launch is separate: CA$60 total cap, paused until Josh verifies live pages/booking and authorizes it.
+
 ### GitHub deployment workflow restored
 
 On November 17, Josh refreshed the existing GitHub credentials. All seven preserved campaign and

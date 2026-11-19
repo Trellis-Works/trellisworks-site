@@ -1,0 +1,20 @@
+---
+import SolutionShell from "../layouts/SolutionShell.astro";
+import { solutions, solutionEmail } from "../config/solutions";
+export function getStaticPaths() {
+  return solutions.map(solution => ({ params: { solution: solution.slug }, props: { solution } }));
+}
+const { solution: s } = Astro.props;
+const email = solutionEmail(s);
+---
+<SolutionShell title={s.label} description={s.description}>
+  <section class="report-hero solution-hero"><div class="report-container hero-grid">
+    <div class="hero-message"><p class="report-eyebrow">{s.label}</p><h1>{s.title}</h1><p class="hero-description">{s.description}</p><div class="hero-cta"><a class="report-button" href="#talk">{s.cta}</a><span class="cta-note">{s.promise}</span></div></div>
+    <div class="solution-flow"><h2>A practical starting point</h2><ol>{s.steps.map(step => <li>{step}</li>)}</ol><p>Illustrative workflow. We agree sources, access and review steps before building.</p></div>
+  </div></section>
+  <section class="report-section friction-section"><div class="report-container section-split"><div><p class="report-eyebrow">The recurring problem</p><h2>{s.problem}</h2></div><div class="friction-copy"><p>{s.friction}</p></div></div></section>
+  <section class="report-section deliverables-section"><div class="report-container"><div class="section-heading"><div><p class="report-eyebrow">What we implement</p><h2>A defined workflow.<br />A team ready to use it.</h2></div><p>Scope, responsibilities and quote are agreed before implementation.</p></div><div class="deliverable-list">{s.deliverables.map(([heading, body]) => <article class="deliverable"><span class="item-number" aria-hidden="true">•</span><h3>{heading}</h3><p>{body}</p></article>)}</div></div></section>
+  <section class="report-section fit-section"><div class="report-container fit-grid"><div><p class="report-eyebrow">A good place to start</p><h2>{s.promise}</h2></div><ul class="fit-list">{s.fit.map(item => <li><span aria-hidden="true">✓</span>{item}</li>)}</ul></div></section>
+  <section class="report-section faq-section"><div class="report-container faq-grid"><div><p class="report-eyebrow">Before we talk</p><h2>A few practical questions.</h2></div><div class="faq-list">{s.faqs.map(([q,a]) => <details><summary>{q}<span aria-hidden="true">+</span></summary><p>{a}</p></details>)}</div></div></section>
+  <section class="report-section talk-section" id="talk"><div class="report-container talk-grid"><div><p class="report-eyebrow">Start with your workflow</p><h2>{s.cta}.</h2><p>{s.prompt}</p><p class="talk-small">Start with a description. We’ll agree how any business information is shared before you provide it.</p></div><div class="booking-card solution-contact"><h3>Tell us what needs to change.</h3><p>Send a short enquiry. We’ll discuss whether a scoped implementation is a fit and arrange a conversation.</p><a class="report-button" href={email.gmail} target="_blank" rel="noopener noreferrer">Open an enquiry in Gmail</a><div class="booking-email"><a class="email-address" href={email.mailto}>info@trellisworks.ca</a></div><p class="booking-note">Scope and quote follow the conversation.</p></div></div></section>
+</SolutionShell>

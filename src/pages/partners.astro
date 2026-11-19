@@ -1,0 +1,95 @@
+---
+import SolutionShell from "../layouts/SolutionShell.astro";
+---
+<SolutionShell title="For consultants and advisers" description="Trellis Works provides implementation capacity behind your recommendations: practical systems, automation, AI and custom internal tools, with testing and team handoff.">
+    <section id="partners" aria-labelledby="partner-title">
+      <div class="wrap" id="public-copy">
+        <p class="kicker">For consultants and advisers</p>
+        <h1 id="partner-title">Turn your recommendations into working systems.</h1>
+        <p class="intro">Trellis Works provides implementation capacity behind your recommendations. We design and build practical systems around the way a client works, from improving processes and connecting tools to automation, AI and custom internal tools. We help scope the work, implement it and support the team in using it.</p>
+        <div class="columns">
+          <div>
+            <h2>A few ways we can help</h2>
+            <p>Each project starts with the client’s problem. These examples show possible starting points; the scope is shaped around the work.</p>
+            <ul class="examples">
+              <li><strong>Repeatable reporting</strong>Turn exports and spreadsheet cleanup into a recurring process with checks and exceptions for review. <a href="/excel-reporting/">Explore reporting.</a></li>
+              <li><strong>Searchable knowledge</strong>Help staff find answers in procedures and reference material, with links to the source. <a href="/internal-knowledge/">Explore internal knowledge.</a></li>
+              <li><strong>Email organization and drafting</strong>Organize incoming requests and prepare replies for your team to review before sending. <a href="/email-workflows/">Explore email workflows.</a></li>
+              <li><strong>Connected workflows</strong>Move information between tools and carry requests and follow-ups through the team’s existing systems.</li>
+            <li><strong>Reusable onboarding</strong>Turn training and walkthroughs into practical guides and checklists for one role. <a href="/onboarding/">Explore onboarding.</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>When to introduce us</h2>
+            <p>Bring us in when a client knows what needs to change but needs help putting it into practice. Listen for:</p>
+            <ul>
+              <li>“We rebuild the same report every month.”</li>
+              <li>“Everyone asks the same person for answers.”</li>
+              <li>“We enter the same information in several systems.”</li>
+            </ul>
+          </div>
+          <div>
+            <h2>How we collaborate</h2>
+            <p>We start with your recommendation and the client’s current workflow, then agree the scope, responsibilities and support needed.</p>
+            <p>We can deliver a defined project or build alongside the client’s team. Testing, documentation and training help the team use and maintain the result.</p>
+          </div>
+        </div>
+        <div class="cta">
+          <div>
+            <h2>Have a client workflow in mind?</h2>
+            <p>Tell us what needs to change and who owns the process. We’ll discuss whether Trellis is a fit and what a useful introduction would look like.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="button" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=founders%40trellisworks.ca&amp;su=Discuss%20a%20client%20workflow" target="_blank" rel="noopener noreferrer">Discuss a client workflow</a>
+            <a class="address" href="mailto:founders@trellisworks.ca?subject=Discuss%20a%20client%20workflow">founders@trellisworks.ca</a>
+          </div>
+        </div>
+      </div>
+    </section>
+</SolutionShell>
+<style>
+
+    :root { --ink:#1b2430; --paper:#f6f4ee; --brass:#a9762f; --slate:#5c6b78; --line:rgba(27,36,48,.14); }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.65 "Segoe UI","Helvetica Neue",Arial,sans-serif; }
+    .wrap { width:min(1120px,calc(100% - 48px)); margin:auto; }
+    .review { padding:20px 0; background:#e9e5da; border-bottom:1px solid var(--line); font-size:14px; }
+    .review p { margin:6px 0; max-width:90ch; }
+    .review summary { cursor:pointer; font-weight:600; }
+    .review a { text-decoration:underline; }
+    header { padding:24px 0; border-bottom:1px solid var(--line); }
+    .brand { display:flex; align-items:center; gap:18px; font-size:14px; letter-spacing:.12em; text-transform:uppercase; }
+    .brand img { width:136px; height:auto; }
+    .brand span { margin-left:auto; color:var(--slate); }
+    section { padding:72px 0; }
+    .kicker { color:var(--brass); text-transform:uppercase; letter-spacing:.18em; font-size:14px; font-weight:600; margin:0 0 22px; }
+    h1,h2,h3,.button { font-family:"Avenir Next",Avenir,"Segoe UI",sans-serif; }
+    h1 { font-size:clamp(2.6rem,5.1vw,4.2rem); line-height:1.08; letter-spacing:-.04em; font-weight:300; max-width:850px; margin:0; }
+    .intro { max-width:800px; color:var(--slate); font-size:20px; margin:24px 0 42px; }
+    .columns { display:grid; grid-template-columns:1.15fr 1fr 1fr; gap:36px; border-top:1px solid var(--line); padding-top:32px; }
+    h2 { font-size:25px; line-height:1.25; letter-spacing:-.02em; font-weight:400; margin:0 0 20px; }
+    p { margin:0 0 16px; }
+    .columns p,.columns li { color:var(--slate); }
+    ul { margin:0; padding-left:20px; }
+    li { padding-left:4px; margin-bottom:14px; }
+    strong { color:var(--ink); font-weight:600; }
+    .examples { list-style:none; padding:0; }
+    .examples li { padding:0; }
+    .examples strong { display:block; }
+    .cta { display:flex; gap:32px; justify-content:space-between; align-items:center; margin-top:44px; background:var(--ink); color:var(--paper); padding:32px; }
+    .cta h2 { margin-bottom:10px; }
+    .cta p { max-width:570px; color:rgba(246,244,238,.88); margin:0; }
+    .cta-actions { flex-shrink:0; text-align:center; }
+    .button { display:inline-block; background:var(--brass); color:white; border:1px solid var(--brass); padding:15px 20px; font-size:13px; font-weight:600; text-transform:uppercase; letter-spacing:.1em; text-decoration:none; }
+    .address { display:block; font-size:14px; margin-top:12px; color:var(--paper); text-underline-offset:4px; }
+    a:focus-visible,summary:focus-visible { outline:3px solid var(--brass); outline-offset:5px; }
+    .button:hover { background:#946728; }
+    footer { border-top:1px solid var(--line); padding:22px 0; color:var(--slate); font-size:14px; }
+    @media(max-width:900px) { .columns { grid-template-columns:1fr; gap:28px; } .cta { flex-direction:column; align-items:flex-start; } .cta-actions { text-align:left; } }
+    @media(max-width:560px) { .wrap { width:calc(100% - 32px); } section { padding:48px 0; } .intro { font-size:18px; } .cta { padding:24px; } .brand span { max-width:100px; font-size:11px; } .button { width:100%; } }
+    @media print { .review,header,footer { display:none; } section { padding:0; } .columns { grid-template-columns:1fr; } .cta { display:block; color:var(--ink); background:none; padding:20px 0; } .cta p,.address { color:var(--ink); } }
+  
+    .examples a { text-decoration:underline; text-underline-offset:4px; }
+    .button { font-size:14px; }
+
+</style>
